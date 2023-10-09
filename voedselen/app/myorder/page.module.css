@@ -1,8 +1,45 @@
 .main {
-    display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
     padding: 6rem;
     min-height: 100vh;
+
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    grid-template-rows: repeat(3, auto);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+  }
+  
+  .middleTop { grid-area: 1 / 2 / 2 / 3; }
+  .middleMiddle { grid-area: 2 / 2 / 3 / 3; }
+
+  .mainHeader{
+    color: #7031FE;
+    padding: 0px;
+    margin: 0px;
+  }
+  
+  .orderSection{
+   padding-top: 20px;
+   padding-bottom: 20px;
+  }
+
+  .orderData{
+   display: grid;
+   grid-template-columns: repeat(5, 1fr);
+   grid-template-rows: 1fr;
+   grid-column-gap: 0px;
+   grid-row-gap: 0px;
+  }
+  
+  .orderData1 { grid-area: 1 / 1 / 2 / 2; }
+  .orderData2 { grid-area: 1 / 3 / 2 / 4; }
+  .orderData3 { grid-area: 1 / 4 / 2 / 5; }
+  .orderData4 { grid-area: 1 / 5 / 2 / 6; }
+
+  .defaultBackground{
+   min-height: 600px;
+   min-width: 1000px;
   }
